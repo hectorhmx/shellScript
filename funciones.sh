@@ -40,9 +40,41 @@ function params2
     echo "$1"
 }
 params2 "adios"
+#como solucionar esto?
+#a=$1 ###si podemos modificar a 
 
 ##por defecto, los parámetros posicionales son locales al script o funcion 
 ##No se pueden acceder desde otra funcion
 
 chmod 775 ./scriptSaluda.sh
 ./scriptSaluda.sh "Prebes"
+
+##El resto de las vaariables que definimos son globales dentro del script
+##Podemos hacer una variable local mediante:
+local var="Valor"
+
+
+###Resumen de scopes
+var1="Global"
+
+function Scopes
+{
+    echo $var1
+    echo "$1" ##Pertenece al script, no podemos acceder a ella
+    local var2="Local a la funcion"
+    echo $var2
+    var3="Tambien es global"
+}
+Scopes
+echo $var1
+echo $1
+echo $var2 
+echo $var3
+
+##Tomar en cuenta
+echo "$10" ###Espandira el 1 seguido de un 0
+echo "${10}" ##Expandirá el 10 
+
+
+###Seguir con variablesAvanzadas
+
