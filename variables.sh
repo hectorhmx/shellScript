@@ -76,3 +76,14 @@ echo $a
 ##Expresiones aritmeticas 2
 declare -i b=$((1+1)) ###Entero tal cual
 echo "B = $b"
+
+
+###Variable especial $?
+echo "hola mundo"
+echo "El codigo de salida del anterior comando fue $?" 
+cd NoExisto
+echo "El codigo de salida del anterior comando fue $?" 
+
+### Por lo general, 0 correcto, del 1 al 255 error
+##Esta variable debe ser leida justo después de ejecutar el comadno
+

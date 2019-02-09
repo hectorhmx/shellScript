@@ -41,4 +41,5 @@ var_entero
 #####uso de las llaves
 nombre="Roberto"
 apellido="Robato"
-echo "$nombre $apellido"
+echo "$nombre $apellido
+#Seguir con variables

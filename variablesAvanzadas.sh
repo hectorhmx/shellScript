@@ -26,3 +26,5 @@ Args "$@" ##Mantiene el orden
 
 #siempre entrecomillar $*, $@
 ##"$@" Es recomendable para pasar todos los argumentos a una funcion
+
+##Seguir con control

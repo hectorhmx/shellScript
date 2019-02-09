@@ -75,6 +75,34 @@ echo $var3
 echo "$10" ###Espandira el 1 seguido de un 0
 echo "${10}" ##Expandirá el 10 
 
+### Podemos darle codigos de salida a las funciones
+
+
+function Salida
+{
+    mkdir "DejameSalir:c"
+    sal=$?
+    return $sal ##solo en funciones y escripts ejecutados con source
+    #return si solo ponemos esto, se retorna el $?
+    #si no se pone return retorna $?
+    echo "Yo no me veo"
+}
+Salida
+res=$?
+
+echo "$res Funcion"
+
+function Salida2
+{
+    echo "salirAdentro"
+    exit ##También puede llevar un numero
+}
+
+Salida2
+echo "salirAfuera"
+##Exit termina el script
+
 
 ###Seguir con variablesAvanzadas
 
+#rm -d "DejameSalir:c"
