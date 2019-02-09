@@ -87,3 +87,4 @@ echo "El codigo de salida del anterior comando fue $?"
 ### Por lo general, 0 correcto, del 1 al 255 error
 ##Esta variable debe ser leida justo después de ejecutar el comadno
 
+#seguir con funciones

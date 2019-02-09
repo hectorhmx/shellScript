@@ -1,4 +1,5 @@
 #!/bin/bash
+###Es más un for each
 
 function funcion1
 {
@@ -16,7 +17,6 @@ function sec
 	done
 	echo "Terminado"
 }
-
 function directorios ###listando directorios de home
 {
 	cd
@@ -28,5 +28,23 @@ function directorios ###listando directorios de home
 		fi
 	done
 }
+#directorios
 
-directorios
+function argumentos
+{
+	###Delimitador al usar in será el definiddo en IFS
+	for arg in "$@" ##Hay que usar ese por las separaciones
+	do
+		echo "Mensaje: $arg"
+	done
+}
+#argumentos "Hola" "prebes" "tengo sueño" "son las 3 am" 
+
+function ForAritmetico
+{
+	for((i=0;i<=5;i++))
+	do
+		echo "$i"
+	done
+}
+ForAritmetico

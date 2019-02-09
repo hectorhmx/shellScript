@@ -103,6 +103,7 @@ echo "salirAfuera"
 ##Exit termina el script
 
 
-###Seguir con variablesAvanzadas
+
 
 #rm -d "DejameSalir:c"
+###Seguir con variablesAvanzadas

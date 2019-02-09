@@ -1,3 +1,10 @@
+
+#while comando
+#do
+#   ...
+#done
+
+
 function ciclo
 {
     contador=0
@@ -8,3 +15,6 @@ function ciclo
     echo 'El contador es $contador'
 }
 ciclo
+
+##while aritmetico
+#ir a aleatorio

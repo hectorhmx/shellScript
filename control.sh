@@ -68,7 +68,7 @@ function CompararNums
         echo "Este es el if menos especifico que veras"
     fi
 }
-CompararNums "3" "3"
+#CompararNums "3" "3"
 function ficheros
 {
     if [ -a $1 ]
@@ -85,6 +85,11 @@ function ficheros
     fi
     ###otros -x,-w ##permisos de escritura y lectura
 }
-ficheros "." #"for.sh"
+#ficheros "." #"for.sh"
+num=5
+num2=5
+if ((num == num2)); then
+    echo "Son iguales"
+fi
 
 ##Seguir con for
